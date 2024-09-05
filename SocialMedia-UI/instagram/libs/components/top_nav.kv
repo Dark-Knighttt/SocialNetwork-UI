@@ -1,0 +1,45 @@
+<TopNav@MDBoxLayout>:
+    
+    padding: 3
+    size_hint_y: None
+    adaptive_height: True
+
+    MDRelativeLayout:
+        orientation: 'horizontal'
+        padding: 3
+        size_hint_y: None
+        Circle:
+            radius: [50, ]
+            size: 60,60
+            md_bg_color: 1,1,1,1
+            pos_hint: {"center_x": 0.1,"center_y":2.1}
+
+        Circle:
+            radius: [50, ]
+            size: 55,55
+            md_bg_color: 1,1,1,1
+            pos_hint: {"center_x": 0.1,"center_y":2.1}
+
+        FitImage:
+            source: root.avatar
+            size_hint: None,None 
+            size:53,53
+            radius: [53]
+            pos_hint: {"center_x": 0.1,"center_y":2.1}
+
+    
+    MDLabel:
+        text: root.username
+        font_style: 'H6'
+        size_hint_y: None
+        height: self.texture_size[1]
+        valign: 'center'
+        theme_text_color: 'Custom'
+        text_color: 1, 1, 1, 1
+        pos_hint: {"center_x": 0.7,"center_y":2.1}
+
+    MDIconButton:
+        icon: 'camera-outline'
+        pos_hint: {"center_x": 0.9,"center_y":2.1}
+        theme_text_color: 'Custom'
+        text_color: 1, 1, 1, 1

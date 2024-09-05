@@ -1,0 +1,17 @@
+<AppBar@MDBoxLayout>:
+    padding: '5dp'
+    adaptive_height: True
+
+    MDIconButton:
+        icon : 'plus'
+
+    MDLabel:
+        text: 'SocialScape'
+        halign: 'center'
+        valign:'center'
+        font_size: 30
+        font_name: "assets/fonts/GhostBlaze.ttf"
+
+    MDIconButton:
+        icon: 'facebook-messenger'
+        on_press: app.root.current='conversation'

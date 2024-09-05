@@ -1,0 +1,37 @@
+{
+    "reels": [
+        {
+            "username": "Joe",
+            "avatar": "instagram\\assets\\images\\avatar2.jfif",
+            "video": "instagram\\assets\\images\\ganeshji.mp4",
+            "likes": "1200",
+            "comments": "300",
+            "posted_ago": "2h"
+        },
+        {
+            "username": "Craxxy",
+            "avatar": "instagram\\assets\\images\\avatar5.jfif",
+            "video": "https://videos.pexels.com/video-files/4273476/4273476-uhd_1440_2732_25fps.mp4",
+            "likes": "1200",
+            "comments": "300",
+            "posted_ago": "2h"
+        },
+        {
+            "username": "Zavier",
+            "avatar": "instagram\\assets\\images\\avatar7.jfif",
+            "video": "https://video.fidr4-3.fna.fbcdn.net/v/t42.1790-2/422403725_1411906606133840_250788537308232002_n.mp4?_nc_cat=110&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjc0NSwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIiwidmlkZW9faWQiOjM5NzQ5ODM4NjEzMjA4OX0%3D&_nc_ohc=wsxeaztmBuIQ7kNvgHB43R6&rl=745&vabr=414&_nc_ht=video.fidr4-3.fna&oh=00_AYBgvOJWo_NkqY8OXMumVQhuYEUONpIk_23iHvaZ7-M9Cg&oe=66ADC3D2",
+            "likes": "1200",
+            "comments": "300",
+            "posted_ago": "2h"
+        },
+        {
+            "username": "Zooni",
+            "avatar": "instagram\\assets\\images\\avatar3.jfif",
+            "video": "https://video.fidr4-3.fna.fbcdn.net/v/t42.1790-2/422403725_1411906606133840_250788537308232002_n.mp4?_nc_cat=110&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjc0NSwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIiwidmlkZW9faWQiOjM5NzQ5ODM4NjEzMjA4OX0%3D&_nc_ohc=wsxeaztmBuIQ7kNvgHB43R6&rl=745&vabr=414&_nc_ht=video.fidr4-3.fna&oh=00_AYBgvOJWo_NkqY8OXMumVQhuYEUONpIk_23iHvaZ7-M9Cg&oe=66ADC3D2",
+            "likes": "1200",
+            "comments": "300",
+            "posted_ago": "2h"
+        }
+        
+    ]
+}

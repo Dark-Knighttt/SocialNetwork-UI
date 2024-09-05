@@ -1,0 +1,24 @@
+<BottomNav>:
+    adaptive_height: True
+    spacing:10
+    padding:10
+    
+    MDIconButton:
+        icon: 'home'
+        on_press: app.root.current = 'home'
+    MDIconButton:
+        icon: 'magnify'
+    MDIconButton:
+        icon: 'movie'
+        on_press: app.root.current = 'reel'
+    MDIconButton:
+        icon: 'heart-outline'
+
+    MDIconButton:
+        icon: root.avatar
+        on_press: app.root.current = 'profile'
+        size_hint: None,None
+        size:25,25
+        radius:[25,]
+        pos_hint:{"center_x":0.5,"center_y":0.5}
+

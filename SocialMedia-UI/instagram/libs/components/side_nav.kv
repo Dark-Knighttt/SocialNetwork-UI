@@ -1,0 +1,44 @@
+<SideNav>:
+    size_hint_x : None
+    orientation : "vertical"
+
+    spacing:10
+    padding:138
+    
+    MDBoxLayout:
+        orientation : "vertical"
+        spacing: dp(10)
+        padding: dp(138)
+        size_hint_y: None
+        widgets:
+        size_hint_y: None
+        MDIconButton:
+            icon: 'camera-outline'
+            # pos_hint: {"center_x": 0.9,"center_y":2.1}
+            theme_text_color: 'Custom'
+            text_color: 1, 1, 1, 1
+        MDIconButton:
+            icon: 'heart-outline'
+            theme_text_color: 'Custom'
+            text_color: 1, 1, 1, 1
+            on_press: root.on_press_home()
+        MDLabel:
+            orientation:'horizontal'
+            text: root.likes
+            font_size: 11
+            halign:'center'
+            theme_text_color: 'Custom'
+            text_color: 1, 1, 1, 1
+        MDIconButton:
+            icon: 'comment-outline'
+            text: '562'
+            theme_text_color: 'Custom'
+            text_color: 1, 1, 1, 1
+        MDIconButton:
+            icon: 'share-outline'
+            theme_text_color: 'Custom'
+            text_color: 1, 1, 1, 1
+        MDIconButton:
+            icon: 'dots-horizontal'
+            theme_text_color: 'Custom'
+            text_color: 1, 1, 1, 1

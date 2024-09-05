@@ -1,0 +1,147 @@
+#:import BottomNav libs.components.bottom_nav.BottomNav
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+<ProfilePage>:
+    name: 'profile'
+
+    MDFloatLayout:
+        md_bg_color: rgba(122, 5, 65, 0.38)
+        ScreenManager:
+            id: screen_manager
+            transition: FadeTransition()
+        ProfileCard:
+            size_hint_y: .65
+            pos_hint: {"center_y":0.7}
+            elevation: 6
+            md_bg_color: rgba(230, 151, 192, 140)
+            radius: [0,0,70,70]
+
+            MDIconButton:
+                on_press: app.root.current = 'home'
+                icon : "arrow-left"
+                pos_hint: {"center_y": .91}
+                user_font_size: "20sp"
+                theme_text_color: "Custom"
+                text_color: rgba(71, 92, 119, 255)
+
+            MDIconButton:
+                icon : "dots-vertical"
+                pos_hint: {"center_x":.93,"center_y": .91}
+                user_font_size: "20sp"
+                theme_text_color: "Custom"
+                text_color: rgba(71, 92, 119, 255)
+
+            MDLabel:
+                text: "My Profile"
+                font_name:"instagram\\assets\\fonts\\BabyBonita.ttf"
+                font_size: "26sp"
+                pos_hint: {"center_x":.56,"center_y":.82}
+                color: rgba(71,92,119,255)
+
+            # Image:
+            #     source: root.profile_picture
+            #     pos_hint: {"center_x":.5, "center_y": .62}
+
+            Circle:
+                radius: [110, ]
+                size: 120,120
+                md_bg_color: 1,1,1,1
+
+            Circle:
+                radius: [105, ]
+                size: 115,115
+                md_bg_color: 1,1,1,1
+
+            FitImage:
+                source: root.profile_picture
+                size_hint: None,None 
+                size:113,113
+                radius: [113]
+                pos_hint: {"center_x": 0.5,"center_y":0.6}
+            MDLabel:
+                padding: 5
+                text: "GAURI THAKRE"
+                # font_name:"instagram\\assets\\fonts\\BabyBonita.ttf"
+                font_size: "24sp"
+                pos_hint: {"center_y":.40}
+                halign: "center"
+                color: rgba(71,92,119,255)
+
+            MDLabel:
+                padding: 5
+                text: "Madhav Institute of Technology & Science"
+                font_name:"instagram\\assets\\fonts\\Quandary.ttf"
+                font_size: "18sp"
+                pos_hint: {"center_y":.32}
+                halign: "center"
+                color: rgba(118,202,220,255)
+
+            MDLabel:
+                padding: 5
+                text: "CSE-2025"
+                font_name:"instagram\\assets\\fonts\\Quandary.ttf"
+                font_size: "16sp"
+                pos_hint: {"center_y":.24}
+                halign: "center"
+                color: rgba(118,202,220,255)
+
+            MDGridLayout:
+                rows:2
+                cols: 3
+                size_hint: .85, .12
+                pos_hint: {"center_x":.5, "center_y":.15}
+                MDLabel:
+                    text: "Posts"
+                    halign: "center"
+                    # font_name: "instagram\\assets\\fonts\\Quandary.ttf"
+                    font_size: "14sp"
+                    color: rgba(101,102,130,255)
+                MDLabel:
+                    text: "Followers"
+                    halign: "center"
+                    # font_name: "instagram\\assets\\fonts\\Quandary.ttf"
+                    font_size: "14sp"
+                    color: rgba(101,102,130,255)
+                MDLabel:
+                    text: "Followings"
+                    halign: "center"
+                    # font_name: "instagram\\assets\\fonts\\Quandary.ttf"
+                    font_size: "14sp"
+                    color: rgba(100,102,130,255)
+                MDLabel:
+                    text: "258"
+                    halign: "center"
+                    # font_name: "instagram\\assets\\fonts\\Quandary.ttf"
+                    font_size: "20sp"
+                    color: rgba(71,92,119,255)
+                MDLabel:
+                    text: "10078"
+                    halign: "center"
+                    # font_name: "instagram\\assets\\fonts\\Quandary.ttf"
+                    font_size: "20sp"
+                    color: rgba(71,92,119,255)
+                MDLabel:
+                    text: "230"
+                    halign: "center"
+                    # font_name: "instagram\\assets\\fonts\\Quandary.ttf"
+                    font_size: "20sp"
+                    color: rgba(71,92,119,255)
+        Image:
+            source: "instagram\\assets\\images\\avatar2.jfif"
+            size_hint: .4,.4
+            pos_hint: {"center_x": .32,"center_y":.26}
+        Image:
+            source: "instagram\\assets\\images\\avatar3.jfif"
+            size_hint: .4,.4
+            pos_hint: {"center_x": .68,"center_y":.26}
+        Image:
+            source: "instagram\\assets\\images\\avatar8.jfif"
+            size_hint: 1,.3
+            pos_hint: {"center_x": .5,"center_y":0.01} 
+        
+    BottomNav:
+        avatar : root.profile_picture
+
+
+        
+        
